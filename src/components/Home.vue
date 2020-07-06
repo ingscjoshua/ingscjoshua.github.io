@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col s12">
-
+        <h1>{{nameSite}}</h1>
         <img src="/static/img/cover.jpg" alt="cover" class="cover">
       </div>
     </div>
@@ -13,8 +13,10 @@ export default{
   name:'home',
   data(){
     return{
-      nameSite:process.env.VUE_APP_SITE_NAME
+      nameSite:'Josué Hernández Ramírez'
     }
+  },
+  mounted(){
   }
 }
 </script>

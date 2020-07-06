@@ -1,6 +1,8 @@
 <template>
-  <div id="app" class="main" >
+  <div id="app" class="page-flexbox-wrapper"  >
+    <main>
     <router-view/>
+    </main>
     <main-footer></main-footer>
   </div>
 </template>

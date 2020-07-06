@@ -2,7 +2,7 @@
   --primary-color:cyan darken-3;
   --accent-color: cyan accent-3;
 }
-body {
+.page-flexbox-wrapper {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
