@@ -9,7 +9,8 @@
     "start": "npm run dev",
     "watch:css": "postcss ./src/assets/css/styles.css -o static/css/styles.css",
     "build": "node build/build.js",
-    "deploy": "aws s3 sync --acl public-read --delete dist/ s3://porfilejhr --profile krakensoft"
+    "deploy-aws": "aws s3 sync --acl public-read --delete dist/ s3://porfilejhr --profile krakensoft",
+    "deploy": "node build/gh-pages-deploy.js"
   },
   "dependencies": {
     "vue": "^2.5.2",
@@ -56,7 +57,8 @@
     "webpack": "^3.6.0",
     "webpack-bundle-analyzer": "^2.9.0",
     "webpack-dev-server": "^2.9.1",
-    "webpack-merge": "^4.1.0"
+    "webpack-merge": "^4.1.0",
+    "execa": "latest"
   },
   "engines": {
     "node": ">= 6.0.0",
