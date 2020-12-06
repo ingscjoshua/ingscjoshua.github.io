@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+/*
+ * Custom styles
+ * */
+.cover{
+  @apply rounded;
+}
+
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-3xl font-semibold;
+  }
+  h2 {
+    @apply text-2xl;
+  }
+}

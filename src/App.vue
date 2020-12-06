@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="page-flexbox-wrapper"  >
+  <div id="app" class="container">
     <main>
     <router-view/>
     </main>
@@ -8,12 +8,10 @@
 </template>
 
 <script>
-import M from 'materialize-css'
 import MainFooter from '@/components/MainFooter'
 export default {
   name: 'App',
   mounted(){
-    M.AutoInit()
   },
   components:{MainFooter}
 }
