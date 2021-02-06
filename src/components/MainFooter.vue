@@ -1,7 +1,7 @@
 <template>
-  <div id="main-footer">
-     <footer class="page-footer cyan darken-3">
-          © 2020 Copyright Spartan Devs
+  <div id="main-footer" class="flex-row">
+     <footer class="h-24  bg-gray-900">
+         <div class="p-8 text-center text-lg text-gray-200"> © 2020 Copyright Spartan Devs</div>
         </footer>
   </div>
 </template>

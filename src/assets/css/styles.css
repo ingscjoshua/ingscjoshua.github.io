@@ -1,19 +1,31 @@
 @tailwind base;
 @tailwind components;
-/*
- * Custom styles
- * */
-.cover{
-  @apply rounded;
-}
-
 @tailwind utilities;
 
 @layer base {
   h1 {
-    @apply text-3xl font-semibold;
+    @apply text-3xl font-bold;
   }
   h2 {
     @apply text-2xl;
   }
 }
+/*
+* custom styles
+*/
+@layer components {
+  .container-main{
+  		@apply bg-gray-800 flex flex-col h-screen;
+
+ 	}
+	.cover{
+ 		object-fit: cover;
+   		width: 100%; 
+	}
+	.content-main{
+	@apply flex-grow;
+	}
+	.footer{
+ 	}
+}
+  
