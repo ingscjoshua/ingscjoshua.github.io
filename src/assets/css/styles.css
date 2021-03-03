@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind screens;
 
 @layer base {
   h1 {
@@ -15,7 +16,7 @@
 */
 @layer components {
   .container-main{
-  		@apply bg-gray-800 flex flex-col h-screen;
+  		@apply bg-white dark:bg-gray-800  flex flex-col h-screen;
 
  	}
 	.cover{

@@ -5,7 +5,7 @@
   "author": "Josué Hernández Ramírez",
   "private": true,
   "scripts": {
-    "dev": "postcss ./src/assets/css/styles.css -o static/css/styles.css && webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "watch:css": "postcss ./src/assets/css/styles.css -o static/css/styles.css --watch",
     "build": "node build/build.js",
